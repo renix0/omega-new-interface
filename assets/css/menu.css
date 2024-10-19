@@ -1,0 +1,17 @@
+#menu-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+}
+
+.center-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
