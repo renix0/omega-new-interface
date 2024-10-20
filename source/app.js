@@ -12,6 +12,18 @@ class Application {
     }
 }
 
-const app = new Application()
-window.app = app
+Array.prototype.delete = function (element) {
+    const index = this.indexOf(element)
+    return index !== -1 && this.splice(index, 1)
+}
+
+if (document.readyState === 'ready' || document.readyState === 'complete') {
+    window.app = new Application()
+} else {
+    document.onreadystatechange = () => {
+        if (document.readyState === 'complete') {
+            window.app = new Application()
+        }
+    }
+}
 
