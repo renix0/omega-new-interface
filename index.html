@@ -34,7 +34,56 @@
     </div>
     <section id="menu-overlay">
         <div class="center-screen">
-            <div id="menu">Welcome</div>
+            <div id="menu">
+                <div class="tabs">
+                    <button class="tab-button active" data-tab="start">
+                        <i class="fas fa-play"></i> Start
+                    </button>
+                    <button class="tab-button" data-tab="settings">
+                        <i class="fas fa-cog"></i> Settings
+                    </button>
+                    <button class="tab-button" data-tab="theme">
+                        <i class="fas fa-paint-brush"></i> Theme
+                    </button>
+                    <button class="tab-button" data-tab="hotkeys">
+                        <i class="fas fa-keyboard"></i> Hotkeys
+                    </button>
+                </div>
+                <div class="tab-content" id="start-content">
+                    <div class="server-list">
+                        <label for="server-select" style="font-size: 15px;">Choose a server:</label>
+                        <select id="server-select">
+                            <option value="server1">Rookery</option>
+                            <option value="server2">Dagestan</option>
+                            <option value="server3">Nemesis</option>
+                        </select>
+                    </div>
+                    <div class="player-profiles">
+                        <div class="player-profile p1">
+                            <div class="profile-input">
+                                <div class="skin-preview" id="player1-skin-preview"></div>
+                                <input type="text" id="player1-nickname" placeholder="Nickname" />
+                                <input type="text" id="player1-skin-url" placeholder="Skin URL" value="https://i.imgur.com/tXdqHui.png" />
+                            </div>
+                        </div>
+                        <div class="player-profile p2">
+                            <div class="profile-input">
+                                <div class="skin-preview" id="player2-skin-preview"></div>
+                                <input type="text" id="player2-nickname" placeholder="Nickname" />
+                                <input type="text" id="player2-skin-url" placeholder="Skin URL" value="https://i.imgur.com/OMlYxNA.png"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button class="full-width-button player-button"><i class="fas fa-play"></i> Play</button>
+                        <button class="full-width-button spectate-button"><i class="fas fa-eye"></i> Spectate</button>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="settings-content" style="display: none;">Settings content goes here</div>
+                <div class="tab-content" id="theme-content" style="display: none;">Theme content goes here</div>
+                <div class="tab-content" id="hotkeys-content" style="display: none;">Hotkeys content goes here</div>
+            </div>
         </div>
     </div>
     <script type='module' src="./source/app.js"></script>
