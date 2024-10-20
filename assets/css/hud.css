@@ -14,7 +14,7 @@
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: rgba(0, 0, 0, 0.267);
+    background-color: rgba(0, 0, 0, 0.4);
     padding: 10px;
     color: #FFFFFF;
     font-weight: 500;
@@ -27,9 +27,17 @@
 
 #leaderboard-list {
     font-size: 90%;
+}
+
+#leaderboard-list span {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
     text-overflow: ellipsis;
     width: 100%;
+    box-sizing: border-box;
 }
+
 
 
 #leaderboard .total {
