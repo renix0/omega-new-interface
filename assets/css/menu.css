@@ -1,219 +1,30 @@
-/* Root for colors */
 :root {
-    --color-primary: #4f9ef8; /* Primary color */
-    --color-secondary: #3ec423; /* Player button color */
-    --color-tertiary: #f39c12; /* Spectate button color */
-    --color-hover-primary: rgba(79, 158, 248, 0.5); /* Hover color for primary buttons */
-    --color-background: #ffffff; /* Background color */
-    --color-text: #1f1f1f; /* Main text color */
-    --color-border-light: #e6e6e6; /* Light border color */
-    --color-border-dark: #ccc; /* Darker border color */
-    --color-overlay: rgba(0, 0, 0, 0.4); /* Overlay color */
+    --overlay-color: rgba(0, 0, 0, 0.4);
+    --border-radius: 10px
 }
 
 /* Overlay for the menu */
 #menu-overlay {
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: var(--color-overlay);
+    background-color: var(--overlay-color);
     pointer-events: auto;
     z-index: 2;
 }
 
 /* Main menu styles */
-#menu {
-    width: 720px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-top: 0;
-}
-
-/* Tabs section */
-#menu .tabs {
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--color-background);
-    border-radius: 15px 15px 0 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-/* Tab button styles */
-#menu .tab-button {
-    flex: 1;
-    background-color: transparent;
-    border: none;
-    padding: 15px 0;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
-    color: #4d4d4d;
-    text-align: center;
-    outline: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-#menu .tab-button i {
-    margin-right: 8px;
-}
-
-#menu .tab-button:first-child {
-    border-top-left-radius: 15px;
-}
-
-#menu .tab-button:last-child {
-    border-top-right-radius: 15px;
-}
-
-/* Active and hover styles for tab buttons */
-#menu .tab-button.active {
-    background-color: var(--color-primary);
-    color: #ffffff;
-}
-
-#menu .tab-button:hover {
-    background-color: var(--color-hover-primary);
-    color: #ffffff;
-}
-
-#menu .tab-button.active:hover {
-    background-color: var(--color-primary);
-}
-
-#menu .tab-content {
-    padding: 20px;
-    background-color: var(--color-background);
-    height: 452px;
-    border-radius: 0 0 15px 15px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Start content styling */
-#start-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    color: var(--color-text);
-}
-
-/* Server list styles */
-.server-list {
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.server-list label {
-    display: block;
-    margin-bottom: 5px;
-    text-align: center;
-}
-
-#server-select {
-    width: 100%;
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid var(--color-border-light);
-    font-weight: 550;
-    font-size: 15px;
-    color: #3b3b3b;
-}
-
-/* Player profile section */
-.player-profiles {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.player-profile {
-    flex: 1;
-    padding: 15px;
-    border-radius: 10px;
-    border: 1px solid var(--color-border-light);
-}
-
-.player-profile h3 {
-    font-size: 20px;
-    text-align: center;
-}
-
-/* Profile input styles */
-.profile-input {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.profile-input input {
-    width: 90%;
-    padding: 6px;
-    border: 1px solid var(--color-border-light);
-    background-color: var(--color-background);
-    border-radius: 5px;
-    font-size: 14px;
-    margin: 5px 0;
-    text-align: center;
-    color: #000000;
-}
-
-/* Skin preview circle */
-.skin-preview {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background-color: var(--color-background);
-    margin: 10px 0;
-    border: 6px solid var(--color-border-light);
-}
-
-/* Button section */
-.buttons {
-    margin-top: 20px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-}
-
-/* Full-width button styling */
-.full-width-button {
-    flex: 1;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s ease;
-}
-
-.full-width-button i {
-    margin-right: 8px;
-}
-
-/* Player and Spectate button colors */
-.player-button {
-    background-color: var(--color-secondary);
-}
-
-.player-button:hover {
-    background-color: #32971e;
-}
-
-.spectate-button {
-    background-color: var(--color-tertiary);
-}
-
-.spectate-button:hover {
-    background-color: #c58724;
-}
+.menu {
+    width: 700px;
+    height: 500px;
+    background-color: white;
+    border-radius: var(--border-radius)
+  }
+  
+  .tabs {
+    background-color: #
+  }
+  
